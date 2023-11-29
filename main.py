@@ -24,6 +24,10 @@ if data_file is not None:
 
     st.header("Visualize each attribute")
     for col in list(df.columns):
-    
+        file,ax = plt.subplots()
+        ax.hist(df[col], bins = 20)
+        plt.xlabel(col)
+        plt.ylabel("Quantity")
+        st.pyplot(fig)
 
 
