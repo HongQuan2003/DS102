@@ -21,3 +21,9 @@ if data_file is not None:
     buffer = io.stringIO()
     df.info(buf=buffer)
     st.text(buffer.getvalue())
+
+    st.header("Visualize each attribute")
+    for col in list(df.columns):
+    
+
+
